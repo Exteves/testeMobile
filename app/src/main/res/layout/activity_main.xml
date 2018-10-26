@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLogin"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="34dp" tools:layout_editor_absoluteX="175dp"/>
+
+    <EditText
+            android:id="@+id/username"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="112dp"/>
+
+    <TextView
+            android:text="Senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPassword"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="224dp" tools:layout_editor_absoluteX="163dp"/>
+
+    <EditText
+            android:id="@+id/password"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="281dp"/>
+
+    <Button
+            android:text="Entrar"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/btnLogin"
+            tools:layout_editor_absoluteY="382dp"
+            tools:layout_editor_absoluteX="148dp"
+            tools:ignore="MissingConstraints"/>
+</android.support.constraint.ConstraintLayout>
