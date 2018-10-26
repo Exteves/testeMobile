@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
             val user = User(username.toString(), password.toString())
 
             LoginClient().login(user, object : LoginResponse<User>{
-                override fun success(token: User) {
-                    Toast.makeText(this@MainActivity, token.toString(), Toast.LENGTH_SHORT).show()
+                override fun success(user: User) {
+                    Toast.makeText(this@MainActivity, user.token, Toast.LENGTH_SHORT).show()
                 }
             })
         }
