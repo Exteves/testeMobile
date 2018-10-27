@@ -3,7 +3,7 @@ package ti.forma.avaliacao_mobile.session
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import ti.forma.avaliacao_mobile.MainActivity
+import ti.forma.avaliacao_mobile.ui.activity.MainActivity
 
 class SessionManager {
     lateinit var pref: SharedPreferences
@@ -57,7 +57,7 @@ class SessionManager {
         if (!isLoggedIn()){
             var i: Intent = Intent(con, MainActivity::class.java)
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             con.startActivity(i)
         }
     }

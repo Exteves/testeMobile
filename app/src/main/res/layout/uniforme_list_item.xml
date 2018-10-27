@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/rv_uniforme_name" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_uniforme_tamanho"
+            app:layout_constraintTop_toBottomOf="@+id/rv_uniforme_tamanho" app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:textSize="10sp"
+            android:id="@+id/rv_uniforme_tamanho" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rv_uniforme_disponibilidade"
+            app:layout_constraintEnd_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/rv_uniforme_disponibilidade" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/rv_uniforme_id" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rv_uniforme_tamanho"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/rv_uniforme_sexo" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rv_uniforme_tamanho"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/rv_uniforme_categoriaId" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rv_uniforme_tamanho"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/rv_uniforme_movimentacoes" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rv_uniforme_tamanho"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/rv_uniforme_monitor" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rv_uniforme_tamanho"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/rv_uniforme_tamanhoId" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_uniforme_tamanho"
+            app:layout_constraintTop_toBottomOf="@+id/rv_uniforme_tamanho" app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/rv_uniforme_dataCadastro" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rv_uniforme_tamanho"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+
+</LinearLayout>

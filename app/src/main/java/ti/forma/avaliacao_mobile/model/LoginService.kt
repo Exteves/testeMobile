@@ -1,8 +1,7 @@
 package ti.forma.avaliacao_mobile.model
 
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface LoginService{
     @POST("monitores/login")
