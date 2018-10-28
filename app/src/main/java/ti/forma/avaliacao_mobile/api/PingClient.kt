@@ -7,7 +7,7 @@ import ti.forma.avaliacao_mobile.model.Ping.Ping
 import ti.forma.avaliacao_mobile.model.Ping.PingResponse
 
 class PingClient {
-    fun testConnection(token : String, emptyJson: String = "{}", callBackResponse : PingResponse<Ping>){
+    fun testConnection(token : String, emptyJson: String, callBackResponse : PingResponse<Ping>){
         val call = RetrofitInitializer().pingService().testConnection(token, emptyJson)
 
         call.enqueue(object : Callback<Ping>{

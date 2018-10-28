@@ -38,13 +38,17 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun success(user: User) {
-                    Toast.makeText(this@MainActivity, user.token, Toast.LENGTH_SHORT).show()
-                    session.createLoginSession(user.email, user.token)
-                    val i = Intent(this@MainActivity, menu::class.java)
-                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-                    i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-                    startActivity(i)
-                    finish()
+                    if (user.token == ""){
+                        Toast.makeText(this@MainActivity, "Credenciais inválidas!", Toast.LENGTH_SHORT).show()
+                    }else{
+                        Toast.makeText(this@MainActivity, user.token, Toast.LENGTH_SHORT).show()
+                        session.createLoginSession(user.email, user.token)
+                        val i = Intent(this@MainActivity, menu::class.java)
+                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                        i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                        startActivity(i)
+                        finish()
+                    }
                 }
             })
         }
