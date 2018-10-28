@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val session = SessionManager(applicationContext)
 
         if (session.isLoggedIn()){
@@ -41,7 +42,6 @@ class MainActivity : AppCompatActivity() {
                     if (user.token == ""){
                         Toast.makeText(this@MainActivity, "Credenciais inválidas!", Toast.LENGTH_SHORT).show()
                     }else{
-                        Toast.makeText(this@MainActivity, user.token, Toast.LENGTH_SHORT).show()
                         session.createLoginSession(user.email, user.token)
                         val i = Intent(this@MainActivity, menu::class.java)
                         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)

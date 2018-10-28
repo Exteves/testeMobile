@@ -31,6 +31,25 @@ class menu : AppCompatActivity() {
         email = user.get(SessionManager.KEY_USERNAME)!!
         this.token = user.get(SessionManager.KEY_TOKEN)!!
 
+        PingClient().testConnection(this.token, "{}", object : PingResponse<Ping>{
+            override fun successPing(ping: Ping) {
+                status.text = ping.mensagem
+                if (ping.sucesso!!){
+                    status.setTextColor(Color.GREEN)}
+                else{
+                    status.setTextColor(Color.RED)
+                    session.LogoutUser()
+                }
+
+                Toast.makeText(this@menu, ping.mensagem, Toast.LENGTH_SHORT).show()
+            }
+
+            override fun errorPing(s: String) {
+                Toast.makeText(this@menu, s, Toast.LENGTH_SHORT).show()
+            }
+
+        })
+
         fun testConnection() {
         Handler().postDelayed({
             PingClient().testConnection(this.token, "{}", object : PingResponse<Ping>{

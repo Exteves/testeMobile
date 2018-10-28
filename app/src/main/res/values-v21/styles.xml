@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="TesteTi" parent="android:Theme.Material.NoActionBar">
-        <item name="android:navigationBarColor">@color/Forma</item>
-        <item name="android:statusBarColor">@color/Forma</item>
-        <item name="android:textColorPrimaryInverse">@color/Forma</item>
-        <item name="android:windowBackground">@color/Forma</item>
-        <item name="android:colorBackground">@color/Forma</item>
-        <item name="android:colorPrimary">@color/Forma</item>
-    </style>
     <style name="TesteForma" parent="android:Theme.Material.NoActionBar">
         <item name="android:colorPrimary">@android:color/black</item>
-        <item name="android:colorForeground">@color/Forma</item>
         <item name="android:colorAccent">@android:color/black</item>
-        <item name="android:colorPrimaryDark">@color/Forma</item>
     </style>
 </resources>
