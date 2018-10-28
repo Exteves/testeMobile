@@ -19,15 +19,7 @@ class menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        session = SessionManager(applicationContext)
-
-        if (session.isLoggedIn()){
-            val i = Intent(applicationContext, menu::class.java)
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            startActivity(i)
-            finish()
-        }
+        session = SessionManager(this)
 
         btnLogout.setOnClickListener {
             Toast.makeText(this@menu, "Obrigado e até logo! :)", Toast.LENGTH_SHORT).show()

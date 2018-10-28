@@ -3,8 +3,8 @@ package ti.forma.avaliacao_mobile.api
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import ti.forma.avaliacao_mobile.model.Uniforme
-import ti.forma.avaliacao_mobile.model.UniformeResponse
+import ti.forma.avaliacao_mobile.model.Uniforme.Uniforme
+import ti.forma.avaliacao_mobile.model.Uniforme.UniformeResponse
 
 class UniformeClient{
     fun getUniformes(token : String ,callBackResponse : UniformeResponse<List<Uniforme>>){

@@ -3,8 +3,8 @@ package ti.forma.avaliacao_mobile.api
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import ti.forma.avaliacao_mobile.model.LoginResponse
-import ti.forma.avaliacao_mobile.model.User
+import ti.forma.avaliacao_mobile.model.Login.LoginResponse
+import ti.forma.avaliacao_mobile.model.Login.User
 
 class LoginClient{
 

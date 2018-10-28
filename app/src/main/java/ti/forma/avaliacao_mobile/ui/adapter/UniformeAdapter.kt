@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.uniforme_list_item.view.*
 import ti.forma.avaliacao_mobile.R
-import ti.forma.avaliacao_mobile.model.Uniforme
+import ti.forma.avaliacao_mobile.model.Uniforme.Uniforme
 
 class UniformeAdapter (private val uniformeItemList : List<Uniforme>,
                        private val context: Context

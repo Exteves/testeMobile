@@ -1,4 +1,4 @@
-package ti.forma.avaliacao_mobile.model
+package ti.forma.avaliacao_mobile.model.Login
 
 interface LoginResponse<T> {
     fun success(token : User)

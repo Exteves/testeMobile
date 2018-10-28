@@ -1,4 +1,4 @@
-package ti.forma.avaliacao_mobile.model
+package ti.forma.avaliacao_mobile.model.Uniforme
 import com.google.gson.annotations.SerializedName
 
 data class Uniforme(

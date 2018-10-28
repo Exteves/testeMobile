@@ -1,4 +1,4 @@
-package ti.forma.avaliacao_mobile.model
+package ti.forma.avaliacao_mobile.model.Uniforme
 
 import retrofit2.Call
 import retrofit2.http.GET

@@ -1,6 +1,5 @@
 package ti.forma.avaliacao_mobile.ui.activity
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -8,8 +7,8 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_uniforme_list.*
 import ti.forma.avaliacao_mobile.R
 import ti.forma.avaliacao_mobile.api.UniformeClient
-import ti.forma.avaliacao_mobile.model.Uniforme
-import ti.forma.avaliacao_mobile.model.UniformeResponse
+import ti.forma.avaliacao_mobile.model.Uniforme.Uniforme
+import ti.forma.avaliacao_mobile.model.Uniforme.UniformeResponse
 import ti.forma.avaliacao_mobile.session.SessionManager
 import ti.forma.avaliacao_mobile.ui.adapter.UniformeAdapter
 
@@ -32,7 +31,8 @@ class uniforme_list : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this)
 
         val recyclerView = rv_uniformes
-        UniformeClient().getUniformes(this.token, object : UniformeResponse<List<Uniforme>>{
+        UniformeClient().getUniformes(this.token, object :
+            UniformeResponse<List<Uniforme>> {
             override fun successUniforme(uniformeList: List<Uniforme>) {
                 recyclerView.adapter = UniformeAdapter(uniformeList, this@uniforme_list)
                 recyclerView.layoutManager = layoutManager
